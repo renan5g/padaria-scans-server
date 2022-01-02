@@ -3,7 +3,7 @@ import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
 
 import { PrismaModule } from '@modules/prisma';
-import { UserModule } from './modules/user/user.module';
+import { UserModule } from '@modules/user';
 
 @Module({
   imports: [
