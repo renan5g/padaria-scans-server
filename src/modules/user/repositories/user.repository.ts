@@ -1,5 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '@modules/prisma';
+import { User } from '../interfaces';
+import { CreateUserInput } from '../dtos';
 
 @Injectable()
 export class UserRepository {
@@ -8,5 +10,9 @@ export class UserRepository {
   async exits(email: string): Promise<boolean> {
     const user = await this.prisma.user.findUnique({ where: { email } });
     return !!user;
+  }
+
+  async save(data: CreateUserInput): Promise<User> {
+    return await this.prisma.user.create({ data });
   }
 }
