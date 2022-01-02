@@ -19,4 +19,8 @@ export class UserRepository {
   async find(): Promise<User[]> {
     return await this.prisma.user.findMany();
   }
+
+  async findById(id: string): Promise<User> {
+    return await this.prisma.user.findUnique({ where: { id } });
+  }
 }
