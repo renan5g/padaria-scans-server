@@ -15,4 +15,8 @@ export class UserRepository {
   async save(data: CreateUserInput): Promise<User> {
     return await this.prisma.user.create({ data });
   }
+
+  async find(): Promise<User[]> {
+    return await this.prisma.user.findMany();
+  }
 }
