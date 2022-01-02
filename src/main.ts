@@ -6,8 +6,6 @@ const logger = new Logger('Main');
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  await app.listen(3000, () =>
-    logger.log(`⚡ Server is running on port: http://localhost:3000`),
-  );
+  await app.listen(3000, () => logger.log('Server is running ⚡'));
 }
 bootstrap();
