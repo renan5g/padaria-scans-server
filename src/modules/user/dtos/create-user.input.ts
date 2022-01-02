@@ -1,7 +1,7 @@
 import { InputType } from '@nestjs/graphql';
 import { IsString, IsNotEmpty, IsEmail } from 'class-validator';
 
-import { EmptyMessage } from '@shared/helpers';
+import { EmptyMessage } from '@common/utils';
 
 @InputType()
 export class CreateUserInput {
