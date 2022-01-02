@@ -1,1 +1,21 @@
-export const EmptyMessage = 'Este campo não pode estar vazio';
+export const message = {
+  DEFAULT_MESSAGE: 'Algo inesperado aconteceu. Por favor tente novamente',
+  object_already_exists: 'Já existe um "{objectType}" com o campo "{field}"',
+  invalid_arguments: 'Argumentos inválidos foram recebidos',
+  email_in_use: 'Esse email já está em uso',
+  invalid_password_format:
+    'A senha deve ter pelo menos 8 caracteres e pelo menos um símbolo, número, letra maiúscula e minúscula',
+  auth_invalid: 'O email e/ou senha usados para logar são inválidos',
+  account_not_found: 'Nenhuma conta foi encontrada com esse email',
+  invalid_password: 'Senha inválida',
+  unauthenticated: 'Você precisa estar autenticado para realizar essa operação',
+  invalid_token: 'O token recebido é inválido',
+  'invalid_token.invalid': 'O token recebido é inválido',
+  'invalid_token.expired': 'O token recebido está expirado',
+  forbidden: 'Você não está autorizado para realizar essa ação',
+  invalid_string: 'Precisa ser uma string',
+  invalid_float: 'Precisa ser um float',
+  invalid_int: 'Precisa ser um inteiro',
+  invalid_boolean: 'Precisa ser um booleano',
+  empty: 'Campo não pode esta vazio',
+};
